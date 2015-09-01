@@ -1,4 +1,7 @@
--- Генерация уникальных int8 идентификаторов
+/*
+https://github.com/kergma/id8
+*/
+
 create or replace function systemid() returns int as
 $$
 	select 128
