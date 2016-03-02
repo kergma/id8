@@ -21,7 +21,7 @@ $$
 	select ((100*extract(epoch from at_time))::int8::bit(40)||nextval('id_helper')::bit(12)||systemid()::bit(12))::bit(64)::int8;
 $$
 language sql volatile;
-comment on function generate_id(timestamp with time zone) is 'Внимание: для каждого момента времени может быть сгенерировано только 4096 уникальных идентификаторов';
+comment on function generate_id(timestamp with time zone) is 'Attention: for each moment of time there are only 4096 uids can be generated';
 
 create or replace function id_of_timestamp(t timestamp with time zone) returns int8 as
 $$
