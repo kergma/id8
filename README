@@ -1,1 +1,1 @@
-simple library for generating and converting time based int8 identifiers
+A simple library for generating and converting time-based int8 identifiers on the PostgreSQL server side.
