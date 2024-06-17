@@ -6,3 +6,4 @@ drop function id_of_timestamp(timestamp with time zone);
 drop function timestamp_of_id(int8);
 drop function generator_of_id(int8);
 drop function isid(anyelement);
+drop function id8speed;
